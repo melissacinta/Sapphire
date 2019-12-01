@@ -1,0 +1,260 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    /* font-family: baloo; */
+}
+header{
+    /* background:rgba(255, 255, 255, 0.5); */
+    overflow: hidden;
+
+}
+.sticky{
+    background:#F8F9FA;
+}
+.welcome-screen{
+    height: 100vh !important;
+    width: 100%;
+    background: url() black no-repeat;
+    background-position: right center;
+    background-size: contain;
+    position: relative;
+}
+.welcome-screen .overlay{
+    height: 100vh;
+    /* width: 100vw; */
+    background: rgba(0, 0, 0,0.5);
+    z-index: -1;
+}
+.welcome-text{
+    color: white;
+    padding: 13rem 0 13rem 15rem;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+.welcome-text a{
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #FF00FE;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 0.5rem;
+}
+.welcome-text a:hover{
+    text-decoration: none;
+    background: #7bf503;
+    color: #000000;
+}
+.intro{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/ConstanceInterior.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: top;
+    height: 40vh;
+    margin-bottom: 2rem;
+    position: relative;
+    /* overflow: auto; */
+
+}
+.intro-container{
+    height: 40vh;
+}
+.intro-text{
+    margin: 10rem auto 0 auto ;
+
+}
+.intro-text h1{
+    color:#fff;
+    font-weight: bolder;
+    font-size: 5rem;
+}
+.section{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.welcome-screen2{
+    background: url()  no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+.section .overlay{
+    height: 100vh;
+    /* width: 100vw; */
+    background: rgba(0, 0, 0,0.8);
+    z-index: -1;
+}
+
+.left{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    padding: 13rem 0 0 10rem;
+
+}
+.right{
+    position: absolute;
+    top: 0.3rem;
+    right: 0;
+    padding: 13rem 10rem 0 0;
+    text-align: right;
+
+}
+
+.content{
+    padding: 5rem;
+    background: rgba(253, 103, 4, 0.5);
+    border-bottom-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+}
+.content a{
+    color: #333;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0;
+    border: none;
+    display: inline; 
+}
+
+.content2 a{
+    color: #333;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0;
+    border: none;
+    display: inline; 
+}
+.to-do{
+    /* background: url() #000 no-repeat; */
+    background-position: left center;
+    background-size: contain;
+}
+.important{
+    /* background: url() #FF00FE no-repeat; */
+    background-position: right center;
+    background-size: contain;
+}
+
+.resources{
+    /* background: url() silver no-repeat; */
+    background-position: left center;
+    background-size: contain;
+}
+
+.dark-color{
+    /* color:#ddd; */
+    font-weight: bold;
+}
+.dark-color:hover{
+    font-size: 1.2rem;
+    color: black;
+}
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+.caption-bg{
+    background: rgba(253, 103, 4, 0.5);
+}
+.holiday-let{
+    margin: 5rem 0 5rem 0;
+}
+.holiday-let img{
+    width: 100%;
+    border-bottom-right-radius: 3rem;
+    border-top-left-radius: 3rem;
+}
+.btn-green{
+    background-color: #47A253;
+    color: #fff;
+}
+.legal{
+    margin: 5rem 0 0 0;
+    padding: 4rem 0;
+    background-color: #1F5D96;
+}
+.legal #real{
+    width: 100%;
+    border-bottom-right-radius: 3rem;
+    border-top-left-radius: 3rem;
+}
+.legal .content{
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+}
+.about{
+    padding: 4rem 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/constanceImage.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about img{
+    width: 100%;
+    border-bottom-right-radius: 3rem;
+    border-top-left-radius: 3rem;
+}
+.about-text{
+    color:#fff;
+    padding: 2rem 1rem;
+    /* background: rgba(0, 0, 0, 0.5); */
+}
+footer{
+    background: #ddd;
+    margin: 0;
+    /* height: 50px; */
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 760px) {
+    .welcome-text{
+   
+        padding: 13rem 0 13rem 2rem;
+
+        
+    }
+
+    .left{
+        padding: 8rem 0.7rem 0 0.7rem;
+
+    }
+    .right{
+        
+        padding: 8rem 0.7rem 0 0.7rem;
+    }
+    .intro-text h1{
+        font-weight: bolder;
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 860px) {
+    .welcome-text{
+   
+        padding: 13rem 0 13rem 2rem;
+
+        
+    }
+    .intro-text h1{
+        font-weight: bolder;
+        font-size: 3rem;
+    }
+
+    .left{
+        padding: 8rem 0.7rem 0 0.7rem;
+
+    }
+    .right{
+        
+        padding: 5rem 0.7rem 0 0.7rem;
+    }
+}
+
+
+
+
