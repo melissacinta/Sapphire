@@ -3,6 +3,10 @@
     margin: 0;
     list-style: none;
     /* font-family: baloo; */
+    /* font-size: 1.6rem; */
+}
+body{
+    overflow-x: hidden;
 }
 header{
     /* background:rgba(255, 255, 255, 0.5); */
@@ -10,7 +14,7 @@ header{
 
 }
 .sticky{
-    background:#F8F9FA;
+    background:rgba(255, 255, 255, 0.8);
 }
 .welcome-screen{
     height: 100vh !important;
@@ -95,6 +99,37 @@ header{
     padding: 13rem 0 0 10rem;
 
 }
+.parallax{
+    position: relative;
+}
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+    bac
+}
+.parallax_content{
+    background-color: rgba(0, 0, 0, .8);
+    min-height: 400px;
+    position: relative;
+    transition: all .3s;
+}
+.parallax_content .parallax_caption{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.parallax_content h3{
+    font-weight: 700;
+    font-size: 3rem;
+}
+.parallax_content p{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
 .right{
     position: absolute;
     top: 0.3rem;
@@ -105,10 +140,13 @@ header{
 }
 
 .content{
-    padding: 5rem;
-    background: rgba(253, 103, 4, 0.5);
+    padding: 3rem;
+    background: #1F5D96;
     border-bottom-left-radius: 3rem;
     border-top-right-radius: 3rem;
+}
+.light{
+    color: #FFF;
 }
 .content a{
     color: #333;
@@ -193,6 +231,9 @@ header{
     background-repeat: no-repeat;
 }
 
+.about .image-container{
+    margin: auto;
+}
 .about img{
     width: 100%;
     border-bottom-right-radius: 3rem;
@@ -211,15 +252,23 @@ footer{
     padding: 2rem 0;
     text-align: center;
 }
-
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 500px){
+    .parallax_content h3{
+        font-size: 1.2rem;
+    }
+}
+@media (min-width: 501px) and (max-width: 760px) {
     .welcome-text{
    
         padding: 13rem 0 13rem 2rem;
 
         
     }
-
+    .left-content{
+        margin-bottom: 1.5rem;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 0;
+    }
     .left{
         padding: 8rem 0.7rem 0 0.7rem;
 
@@ -231,6 +280,9 @@ footer{
     .intro-text h1{
         font-weight: bolder;
         font-size: 3rem;
+    }
+    .parallax_content h3{
+        font-size: 2rem;
     }
 }
 @media screen and (max-width: 860px) {
@@ -244,7 +296,16 @@ footer{
         font-weight: bolder;
         font-size: 3rem;
     }
-
+    .left-content{
+        margin-bottom: 1.5rem;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .right-content{
+        margin-top: 1.5rem;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 0;
+    }
     .left{
         padding: 8rem 0.7rem 0 0.7rem;
 
